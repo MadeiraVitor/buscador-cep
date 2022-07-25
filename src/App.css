@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212, #212b46);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+    font-size: 70px;
+    color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-input {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 35px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container-input input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    margin-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.container-input input::placeholder {
+    color: #f1f1f1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-search {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-search:hover {
+    transform: scale(1.2);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.info h2 {
+    margin: 16px 0;
+    font-size: 40px;
+}
+
+.info span {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 620px){
+    .title {
+        font-size: 45px;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .info h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 375px){
+    .title {
+        font-size: 35px;
+    }
+
+    .container-input {
+        width: 90%;
+    }
+
+    .container-input input {
+        font-size: 18px;
+    }
 }
