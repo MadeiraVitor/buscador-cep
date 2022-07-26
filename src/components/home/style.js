@@ -69,7 +69,7 @@ export const Main = styled.main`
         font-weight: bold;
     }
 
-    /* @media (max-width: 620px){
+    @media (max-width: 620px){
         .title {
             font-size: 45px;
         }
@@ -95,5 +95,5 @@ export const Main = styled.main`
         .container-input input {
             font-size: 18px;
         }
-    } */
+    }
 `;
