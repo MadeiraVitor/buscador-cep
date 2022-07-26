@@ -8,12 +8,12 @@ export const Main = styled.main`
     flex-direction: column;
     background: linear-gradient(#121212, #212b46);
 
-    h1 {
+    .title {
         font-size: 70px;
         color: #fff;
     }
 
-    div.container-input {
+    .container-input {
         background-color: rgba(255, 255, 255, 0.2);
         padding: 15px;
         margin: 35px 0;
@@ -22,7 +22,7 @@ export const Main = styled.main`
         box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
     }
 
-    div.container-input input {
+    .container-input input {
         background-color: transparent;
         border: 0;
         font-size: 20px;
@@ -31,7 +31,7 @@ export const Main = styled.main`
         margin-right: 10px;
     }
 
-    div.container-input input::placeholder {
+    .container-input input::placeholder {
         color: #f1f1f1;
     }
 
@@ -45,11 +45,11 @@ export const Main = styled.main`
         transition: 0.5s;
     }
 
-    button.button-search:hover {
+    .button-search:hover {
         transform: scale(1.2);
     }
 
-    div.info {
+    .info {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -59,12 +59,12 @@ export const Main = styled.main`
         border-radius: 8px;
     }
 
-    div.info h2 {
+    .info h2 {
         margin: 16px 0;
         font-size: 40px;
     }
 
-    div.info span {
+    .info span {
         margin-bottom: 16px;
         font-weight: bold;
     }
